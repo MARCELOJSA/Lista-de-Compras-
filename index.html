@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de compras</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Logo fora do container, no topo -->
+    <div class="logo">
+        <img src="/img/Vector.png" class="img-logo" alt="Logo">
+        <h1>quicklist</h1>
+    </div>
+
+    <!-- Main com o conteúdo da lista de compras -->
+    <main class="main-content">
+        <div class="container">
+
+            <!-- Voltar -->
+            <div id="voltar">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span>VOLTAR</span>
+            </div>
+
+            <!-- Quadrado com conteúdo de input e botão -->
+            <div class="input-box">
+                <h2>Compras da semana</h2>
+                <div class="input-container">
+                    <input type="text" id="new-item-input" placeholder="Adicione um novo item">
+                    <button id="add-item-btn">Adicionar item</button>
+                </div>
+            </div>
+
+            <!-- Lista de itens sem fundo quadrado -->
+            <div class="item-list" id="item-list">
+                <!-- Os itens serão inseridos aqui pelo JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
